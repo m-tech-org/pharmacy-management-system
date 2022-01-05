@@ -115,8 +115,8 @@ Employees
 		// echo "<td>" . $row["e_add"]. "</td>";
 		echo "<td align=center>";
 		echo "<a class='button1 edit-btn' href=employee-update.php?id=".$row['e_id'].">Edit</a>";
-		echo "<a onclick='return confirm('Are you sure to delete?');' class='button1 del-btn' href=employee-delete.php?id=".$row['e_id'].">Delete</a>";
-		// echo "<a class='button1 del-btn' href=employee-delete.php?id=".$row['e_id'].">Delete</a>";
+		echo "<a class='button1 del-btn' href=employee-delete.php?id=".$row['e_id'].">Delete</a>";
+				
 		echo "</td>";
 	echo "</tr>";
 	}

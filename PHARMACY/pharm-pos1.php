@@ -139,16 +139,16 @@ New Sales
 					<input type="number" name="medid" value="<?php echo $row4[0]; ?>"readonly ><br><br>
 					
 					<label for="mdname">Medicine Name:</label>
-					<input type="text" name="mdname" value="<?php echo $row4[1]; ?>" readonly><br><br>
+					<input type="text" name="mdname" value="<?php echo (isset($row4[1])?$row4[1]:''); ?>" readonly><br><br>
 					
 					</div>
 					<div class="column">
 					
 					<label for="mcat">Category:</label>
-					<input type="text" name="mcat" value="<?php echo $row4[3]; ?>" readonly><br><br>
+					<input type="text" name="mcat" value="<?php echo (isset($row4[3])?$row4[3]:''); ?>" readonly><br><br>
 					
 					<label for="mloc">Location:</label>
-					<input type="text" name="mloc" value="<?php echo $row4[5]; ?>" readonly><br><br>
+					<input type="text" name="mloc" value="<?php echo (isset($row4[5])?$row4[5]:''); ?>" readonly><br><br>
 					
 					</div>
 					<div class="column">

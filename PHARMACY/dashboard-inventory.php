@@ -8,9 +8,10 @@
 		$search_result=mysqli_query($conn,"SET @p0='$search';")or die(mysqli_error($conn));
 		$search_result=mysqli_query($conn,"CALL `SEARCH_INVENTORY`(@p0);") or die(mysqli_error($conn));
 	}
-	else {
-			$query="SELECT med_id as medid, med_name as medname,med_qty as medqty,category as medcategory FROM meds";
-			$search_result=filtertable($query);
+	else 
+	{
+		$query="SELECT med_id as medid, med_name as medname,med_qty as medqty,category as medcategory FROM meds";
+		$search_result=filtertable($query);
 	}
 	
 	function filtertable($query)
@@ -34,8 +35,10 @@
 <body>
 
 	<div class="topnav">
+		<a href="dashboard-inventory.php">Dashboard</a>
 		<a href="mainpage.php">Log-In</a>
-		<h2 style="font-family:Arial; color:white; text-align:center;"> Pharmacy Management System </h2>
+		<h2 height="60px" style="font-family:Arial; color:white; text-align:center;"> Pharmacy Management System </h2>
+		
         	
 	</div>
 

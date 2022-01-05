@@ -123,7 +123,7 @@ body {font-family:Arial;}
 				
 				<th>Quantity</th>
 				<th>Date of Purchase</th>
-				<th>Cost of Purchase(in Rs)</th>
+				<th>Cost of Purchase(in Tk)</th>
 			</tr>
 	<?php
 	$sql = "SELECT p_id,sup_id,med_id,p_qty,p_cost,pur_date FROM purchase 
@@ -147,7 +147,7 @@ body {font-family:Arial;}
 	
 	echo "<tr>";
 	echo "<td colspan=5>Total</td>";
-	echo"<td >Rs.".$pamt."</td>";
+	echo"<td >Tk.".$pamt."</td>";
 	echo "</tr>";
 	echo "</table>";
 	echo "</table>";
@@ -159,7 +159,7 @@ body {font-family:Arial;}
 			<th>Customer ID</th>
 			<th>Employee ID</th>
 			<th>Date</th>
-			<th>Sale Amount(in Rs)</th>
+			<th>Sale Amount(in Tk)</th>
 		</tr>
 	
 	<?php
@@ -183,7 +183,7 @@ body {font-family:Arial;}
 		}
 	echo "<tr>";
 	echo "<td colspan=4>Total</td>";
-	echo"<td >Rs.".$samt."</td>";
+	echo"<td >Tk.".$samt."</td>";
 	echo "</tr>";
 	echo "</table>";
 	}
@@ -192,7 +192,7 @@ body {font-family:Arial;}
 	<table align="right" id="table1" style="margin-bottom:100px;margin-right:100px;">
 	<tr style="background-color: #f2f2f2;" >
 		<td>Transaction Amount </td>
-				<td>Rs.<?php echo $profits; }?></td>
+				<td>Tk.<?php echo $profits; }?></td>
 	</tr>
 	</table>
 					

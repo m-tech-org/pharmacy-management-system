@@ -63,8 +63,8 @@
 	</div>
 
 	<div class="topnav">
-		<a href="logout.php">Logout(Logged in as Admin)</a>
 		<h2 style="font-family:Arial; color:white; text-align:center;"> Pharmacy Management System </h2>
+		<a href="logout.php">Logout</a>
 	</div>
 	
 	<center>
